@@ -9,7 +9,7 @@ def mergefunc(pcd1,pcd2):
         p2_load = np.asarray(pcd2.points)
         p3_load = np.concatenate((p1_load,p2_load), axis=0)
         pcd.points = o3d.utility.Vector3dVector(p3_load)
-        if pcd2.has_colors()
+        if pcd2.has_colors():
             p1_color = np.asarray(pcd1.colors)
             p2_color = np.asarray(pcd2.colors)
             p3_color = np.concatenate((p1_color,p2_color), axis=0)
